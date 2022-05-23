@@ -1,0 +1,78 @@
+/* Card item */
+.card-menu {
+    padding: 0;
+}
+.card-item{
+    list-style: none;
+}
+.card {
+    max-width: 26rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.card .card-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+/* make img in card has the same size */
+.card .card-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 20vw;
+}
+.card .card-name{
+  text-align:justify;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card .card-desc{
+  font-size: 1rem;
+  text-align: justify;
+  color: #999;
+  line-height: 1.6;
+  margin: 0 auto 1rem;
+}
+.card .card-meta{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.card .card-meta-item{
+  text-align: center;
+}
+.card .card-meta-item >.card-meta-number{
+  font-size: 1.4rem;
+  color: #ff7870;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.card .card-meta-item >.card-meta-text{
+    font-size: 1rem;
+    color: #999;
+}
+.card .card-action {
+    display: flex;
+    justify-content: space-around;
+}
+.card .card-action >.card-button {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 0.7rem;
+    border: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: calc(50% - 4rem);
+}
+.card .card-action >.card-button.card-button--primary {
+    background-color: var(--primary);
+}
+.card .card-action >.card-button.card-button--secondary {
+    background-color: var(--secondary);
+}

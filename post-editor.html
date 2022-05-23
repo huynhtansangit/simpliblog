@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blog | Home</title>
+    <!-- Gg font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="bloggin icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Customized style -->
+    <link rel="stylesheet" href="./assets/css/menu-list.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+
+    </header>
+    <script src="/assets/js/header.js"></script>
+    <section class="banner mb-5">
+        <div class="container">
+            <div class="banner-text__wrapper position-relative">
+                <h1 class="banner-text__heading">Blog</h1>
+                <p class="banner-text__desc">The Simply Blog</p>
+            </div>
+        </div>
+    </section>
+    <!-- Main content -->
+    <section class="main-content" id="main-content">
+        <div class="container">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Author</span>
+                <input type="text" class="form-control" placeholder="Full name">
+            </div>
+            <div class="input-group mb-3 date" id="datepicker">
+                <span class="input-group-text">Published date</span>
+                <input type="date" class="form-control" placeholder="30/12/2022">
+            </div>
+            <textarea name="content"></textarea>
+            <div id="editor">
+                <button class="btn btn-success customized-btn mt-3" style="float: right;" type="submit">Publish</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- Include new script into pages/included-scripts.html -->
+    <div id="included-scripts">
+
+    </div>
+    <script>
+        $(function () {
+            $("#included-scripts").load("/pages/included-scripts.html");
+        });
+
+    </script>
+</body>
+
+</html>
